@@ -6,9 +6,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <div class="container">
+      <section>
+        <form>
+          <div>
+            <label id="texto">Digite sua mensagem</label><br>
+            <input id="mensagem" type="text" autocomplete="off" placeholder="Digite sua mensagem">
+          </div>
+          <div>
+            <label id="texto">Deslocamento</label>
+            <input id="numDeslocamento" type="number" autocomplete="off"><br>   
+            <button>Codificar</button>
+            <button>Descodificar</button>
+          </div>
+          <div>
+            <label id="texto">Resultado</label> <br>
+            <label for="" id="resultado" class="resultado"></label>            
+            <button>Limpar</button>
+          </div>
+        </form>
+
+      </section>
+  </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>

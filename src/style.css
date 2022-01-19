@@ -1,0 +1,20 @@
+body{
+    background-color: #ffff9e;
+}
+#mensagem{
+    width: 350px;
+    height: 120px; 
+}
+.resultado{
+    
+    display: flex;
+    margin: auto;
+    width: 350px;
+    height: 120px;
+    background-color: white;
+    
+}
+.container{
+    text-align: center;
+    
+}

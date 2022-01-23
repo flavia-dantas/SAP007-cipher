@@ -9,32 +9,35 @@
     <div class="container">
       <section>
         <form>
+          <!-- div codificar -->
           <div class="codificar">
             <label id="texto">Criptografar</label>
             <textarea id="msgCodificada" class="mensagem" type="text" autocomplete="off" placeholder="Digite sua mensagem aqui..." autofocus ></textarea>
             <div class="offset">
               <label id="texto">Deslocamento</label>
-              <input id="numDeslocamento" type="number" autocomplete="off" placeholder="Nº">
-              <button>Criptografar</button>
+              <input id="offsetEncode" type="number" autocomplete="off" placeholder="Nº">
+              <button type="submit" id="btnEncode">Criptografar</button>
             </div>
             <div class="resultado">
               <label id="texto">Resultado</label>
               <textarea for="" id="resultado" class="mensagem" readonly placeholder="Sua mensagem será exibida..."></textarea>            
-              <button>Limpar</button>
+              <button type="reset">Limpar</button>
             </div>
           </div>
+
+          <!-- div descodificar -->
           <div class="descodificar">
             <label id="texto">Descriptografar</label>
             <textarea id="msgDescodificada" class="mensagem" type="text" autocomplete="off" placeholder="Digite sua mensagem aqui..." autofocus ></textarea>
             <div class="offset">
               <label id="texto">Deslocamento</label>
-              <input id="numDeslocamento" type="number" autocomplete="off" placeholder="Nº">
-              <button>Descriptografar</button>
+              <input id="offsetDecode" type="number" autocomplete="off" placeholder="Nº">
+              <button type="submit" id="btnDecode">Descriptografar</button>
             </div>
             <div class="resultado">
               <label id="texto">Resultado</label>
               <textarea for="" id="resultado" class="mensagem" readonly placeholder="Sua mensagem será exibida..."></textarea>            
-              <button>Limpar</button>
+              <button type="reset">Limpar</button>
             </div>
           </div>  
         </form>

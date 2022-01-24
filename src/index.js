@@ -2,7 +2,8 @@ import cipher from './cipher.js';
 
 
 
-const bntEncode = document.getElementById("btnEncode").addEventListener("click",cripitografar)
+const btnEncode = document.getElementById("btnEncode").addEventListener("click",cripitografar)
+const btnDecode = document.getElementById("btnDecode").addEventListener("click",descriptografar)
 
 function cripitografar(evento){
     evento.preventDefault();
@@ -13,5 +14,12 @@ function cripitografar(evento){
     console.log(offsetEncode);
 }
 
+function descriptografar(evento){
+    evento.preventDefault();
+    let txtDecode = document.getElementById("msgDescodificada").value;
+    let offsetDecode = document.getElementById("offsetDecode").value;
 
+    console.log(txtDecode);
+    console.log(offsetDecode);
+}
 console.log(cipher);

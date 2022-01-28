@@ -11,17 +11,26 @@ const codigoASC = 65
 const cipher = {
 
   encode (offset, mensagem){
+   
     let resultadoCodificar = "";
-    for (let i = 0; i < mensagem.length ; i++){
-    let valorASC = mensagem.charCodeAt(i);
-    let codificando = ((valorASC - codigoASC + offset) % tamDoAlfabeto) + codigoASC;
+    for (let i = 0; i < mensagem.length; i++){
+    let letrasCifrada = mensagem.charCodeAt(i);
+    let codificando = ((letrasCifrada - codigoASC + offset) % tamDoAlfabeto) + codigoASC;
     resultadoCodificar += String.fromCharCode(codificando);
     
    }
     return resultadoCodificar;
-    //console.log(resultadoCodificar);
+   
   },
-  
+  decode(offset, mensagem){
+    let resultadoDescodificar ="";
+    for (let i = 0; i < mensagem.length; i++){
+    let letrasDecifrada = mensagem.charCodeAt(i);
+    let decodificando = ((letrasDecifrada + codigoASC - offset) % tamDoAlfabeto) + codigoASC;
+    resultadoDescodificar += String.fromCharCode(decodificando);
+    }
+    return resultadoDescodificar; 
+  } 
 
 };
 export default cipher;

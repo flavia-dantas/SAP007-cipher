@@ -12,33 +12,33 @@
         <form>
           <!-- div codificar -->
           <div class="codificar">
-            <label id="texto">Criptografar</label>
+            <label class="texto">Criptografar</label>
             <textarea id="msgCodificada" class="mensagem" type="text" autocomplete="off" placeholder="Digite sua mensagem aqui..." autofocus ></textarea>
             <div class="offset">
-              <label id="texto">Deslocamento</label>
-              <input id="offsetEncode" type="number" autocomplete="off" placeholder="Nº">
+              <label class="texto">Deslocamento</label>
+              <input id="offsetEncode" type="number" min="1" max="26" autocomplete="off" placeholder="Nº">
               <button type="submit" id="btnEncode">Criptografar</button>
             </div>
             <div class="resultado">
-              <label id="texto">Resultado</label>
+              <label class="texto">Resultado</label>
               <textarea for="" id="resultadoEncode" class="mensagem" readonly placeholder="Sua mensagem será exibida..."></textarea>            
-              <button type="submit" id="btnLimparEncode">Limpar</button>
+              <!-- <button type="submit" id="btnLimparEncode">Limpar</button> -->
             </div>
           </div>
 
           <!-- div descodificar -->
           <div class="descodificar">
-            <label id="texto">Descriptografar</label>
+            <label class="texto">Descriptografar</label>
             <textarea id="msgDescodificada" class="mensagem" type="text" autocomplete="off" placeholder="Digite sua mensagem aqui..." autofocus ></textarea>
             <div class="offset">
-              <label id="texto">Deslocamento</label>
-              <input id="offsetDecode" type="number" autocomplete="off" placeholder="Nº">
+              <label class="texto">Deslocamento</label>
+              <input id="offsetDecode" type="number" min="1" max="26" autocomplete="off" placeholder="Nº">
               <button type="submit" id="btnDecode">Descriptografar</button>
             </div>
             <div class="resultado">
-              <label id="texto">Resultado</label>
+              <label class="texto">Resultado</label>
               <textarea for="" id="resultadoDecode" class="mensagem" readonly placeholder="Sua mensagem será exibida..."></textarea>            
-              <button type="submit" id="btnLimparDecode">Limpar</button>
+              <!-- <button type="submit" id="btnLimparDecode">Limpar</button> -->
             </div>
           </div>
         </form>

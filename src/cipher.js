@@ -8,9 +8,10 @@
 const tamDoAlfabeto = 26
 const codigoASC = 65
 
+
 const cipher = {
 
-  encode (offset, mensagem){
+  encode: function (offset, mensagem){
    
     let resultadoCodificar = "";
     for (let i = 0; i < mensagem.length; i++){
@@ -22,7 +23,8 @@ const cipher = {
     return resultadoCodificar;
    
   },
-  decode(offset, mensagem){
+  
+  decode: function (offset, mensagem){
     let resultadoDescodificar ="";
     for (let i = 0; i < mensagem.length; i++){
     let letrasDecifrada = mensagem.charCodeAt(i);

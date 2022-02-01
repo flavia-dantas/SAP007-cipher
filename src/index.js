@@ -1,7 +1,5 @@
 import cipher from './cipher.js';
 
-
-
 const btnEncode = document.getElementById("btnEncode")
 const btnDecode = document.getElementById("btnDecode")
 const textoEncode = document.getElementById("msgCodificada")

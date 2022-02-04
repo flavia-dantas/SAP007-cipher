@@ -4,12 +4,16 @@ A aplicação web desenvolvida para criptografar / descriptografar mensagem.
 
 ## :book: Índice
 
-- [Prefácio](#Prefácio)
-- [Projeto](#Projeto)
-- [Layout](#Layout)
-- [Desenvolvimento](#Desenvolvimento)
+- [:lock: Security Cipher :key:](#lock-security-cipher-key)
+  - [:book: Índice](#book-índice)
+  - [:memo: Prefácio](#memo-prefácio)
+  - [:computer: Projeto](#computer-projeto)
+    - [Interface do usuário (UI)](#interface-do-usuário-ui)
+        - [Criptografar:](#criptografar)
+        - [Descriptografar:](#descriptografar)
+    - [:bulb: Layout](#bulb-layout)
+  - [:gear: Tecnologias](#gear-tecnologias)
 
----
 
 ## :memo: Prefácio
 
@@ -55,33 +59,28 @@ A interface permite ao usuário:
 ##### Descriptografar:
 
 - Digitar uma mensagem (texto) para ser decifrada.
-- Inserir o mesmo _offset_ ultilizado na criptografia indicando quantas posições de deslocamento de caracteres para descifrar.
-- Clicar no botão Descifrar.
+- Inserir o mesmo _offset_ ultilizado na criptografia indicando quantas posições de deslocamento de caracteres para decifrar.
+- Clicar no botão Decifrar.
 - Ver o resultado da mensagem decifrada.
 
-## :bulb: Layout
+### :bulb: Layout
 
-- Este projeto deve ser resolvido individualmente.
+[palletes-collor](src/img/palettes-color.png)
 
-- O projeto será entregue subindo o seu código no GitHub (commit/push) e o
-  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
-  preocupe, você aprendera durante o projeto.
-  
-- Tempo para completar: tempo referência 2 semanas.
+O prototipo foi criado no mockflow. O primeiro prototipo foi apenas desenhado as caixas de texto e os botãos.
 
-- ### UX (User eXperience)
+[prototipo](src/img/prototipo.png)
 
-  - [ ] **Desenhar a aplicação pensando e entendendo o usuário**
 
-  - [ ] **Criar protótipos para obter feedback e iterar**
-
-  - [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-## :gear: Desenvolvimento
+## :gear: Tecnologias
 
 Para desenvolvimento do projeto foram utilizados:
 
 - HTML
+
 - CSS
+
 - JavaScript
 
+- Node.js
+  

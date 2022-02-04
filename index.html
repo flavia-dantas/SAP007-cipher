@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Security Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/img/icon.png" />
+</head>
+
+<body>
+  <header class="container-header">
+    <img class="logo" src="/img/logo.png" alt="logo-pagina" />
+    <nav class="menu">
+
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="/cipher.html">Cipher</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <section id="inicio">
+    <div class="container-inicio">
+      <div class="container-cipher">
+        <p>O Security Cipher é possível escrever mensagens e criptografar transformando de forma secreta e segura.
+          A mensagem é protegida por meio de criptografia pode ser lida somente com a chave correta (deslocamento da
+          letra).
+        </p>
+        
+        <h3>Qual é a Criptografia utilizada?</h3>
+        <p>
+          O Security Cipher utiliza a <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra
+            de
+            César</a> é um dos primeiros tipos de criptografias conhecidas na história. O imperador romano Júlio César
+          utilizava essa cifra para enviar ordens secretas aos seus generais no campo de batalha.
+        </p>
+        <p>
+          A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um tipo de cifra por substituição,
+          em
+          que cada letra do texto original é substituida por outra que se encontra há um número fixo de posições
+          (deslocamento) mais a frente do mesmo alfabeto.
+        </p>
+        <p>Por exemplo se usarmos o deslocamento (offset) de 3 posições:
+        </p>
+
+        <p>
+          Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y
+        </p>
+        <p>Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+        </p>
+        <p>
+          A letra A será D
+        </p>
+        <p> A palavra ABACATE será DEDFDWH
+        </p>
+
+        <p>Atualmente todas as cifras de substituição alfabética simples, são decifradas com facilidade e não oferecem
+          muita segurança na comunicação por si mesma, mas a cifra de César muitas vezes pode fazer parte de um sistema
+          mais complexo de criptografia, como a cifra de Vigenère, e tem aplicação no sistema ROT13.
+        </p>
+      </div>
+      <div class="container-significado">
+        <h3> O que é Criptografia?</h3><br>
+        <img class="imagem-cadeado" src="/img/criptografia.jpg" alt="imagem-cadeado"><br>
+        <p> É a conversão de dados de um formato legível em um formato codificado.</p>
+        <p>Os dados criptografados só podem ser lidos ou processado depois de serem descriptografados.</p>
+        <p>A criptografia envolve a conversão de texto simples legível em texto incompreensível, o que é
+          conhecido como texto cifrado.</p>
+      </div>
+      </div>
+  </section>
+  <section id="como-funciona">
+    <div class="container-funcionamento">
+      <h3>Como funciona?</h3><br>
+      <h3>Criptografar</h3>
+      <p>- Digitar uma mensagem (texto) para ser cifrada.</p>
+      <p>- Eleger um <b>offset</b> indicando quantas posições de deslocamento de caracteres
+        quer que a cifra utilize.</p>
+      <p>- Clicar no botão Cifrar.</p>
+      <p>- Ver o resultado da mensagem cifrada</p><br><br>
+      <h3>Descriptografar</h3>
+      <p>- Digitar uma mensagem (texto) para ser decifrada.</p>
+      <p>- Inserir o mesmo <b>offset</b> ultilizado na criptografia indicando quantas posições de deslocamento de caracteres
+        para descifrar.</p>
+      <p>- Clicar no botão Descifrar.</p>
+      <p>- Ver o resultado da mensagem decifrada.</p><br><br>
+      <h4>Deseja enviar sua mensagem de forma secreta e segura? Abra aqui o <a href="/cipher.html">codificador de mensagens</a>.</h4>
+    </div>
+  </section>
+
+  <script src="index.js" type="module"></script>
+  
+  <!-- rodapé -->
+  <footer class="footer">
+    <div>
+      <p>&copy Copyright 2022 | Developed by Flavia Almeida | Laboratória</p>
+    </div>
+    <div class="container-social">
+      <a href="https://github.com/flavia-dantas" target="_blank">
+        <img class="social-icone" src="/img/github.png" alt="logo-github">
+      </a>
+      <a href="https://www.linkedin.com/in/flavia-dantas/" target="_blank">
+        <img class="social-icone" src="/img/linkedin.png" alt="logoLinkedin">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

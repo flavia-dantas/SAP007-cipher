@@ -65,11 +65,11 @@ A interface permite ao usuário:
 
 ### :bulb: Layout
 
-![palletes-collor](./img/palettes-color.png)
+![](./scr/img/palettes-color.png)
 
 O prototipo foi criado no mockflow. O primeiro prototipo foi apenas desenhado as caixas de texto e os botãos.
 
-![prototipo](./img/prototipo.png)
+![](./src/img/prototipo.png)
 
 
 ## :gear: Tecnologias

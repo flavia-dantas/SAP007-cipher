@@ -2,6 +2,8 @@
 
 A aplicação web desenvolvida para criptografar / descriptografar mensagem.
 
+:open_file_folder: Para abrir [clique aqui](https://flavia-dantas.github.io/SAP007-cipher/)
+
 ## :book: Índice
 
 - [:lock: Security Cipher :key:](#lock-security-cipher-key)
@@ -24,7 +26,7 @@ ordens secretas aos seus generais no campo de batalha.
 
 A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um
 tipo de cifra por substituição, em que cada letra do texto original é
-substituida por outra que se encontra há um número fixo de posições
+substituída por outra que se encontra há um número fixo de posições
 (deslocamento) mais a frente do mesmo alfabeto.
 
 Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
@@ -42,7 +44,7 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## :computer: Projeto
 
-O Security Cipher foi desenvolvido para atender o público que necessita de segurança e privacidade. Através da aplicação web é possível escrever mensagens e criptografar transformando de forma secreta e segura. A mensagem é protegida por meio de criptografia pode ser lida somente com a chave correta (deslocamento da letra).  
+O [Security Cipher](https://flavia-dantas.github.io/SAP007-cipher/) foi desenvolvido para atender o público que necessita de segurança e privacidade. Através da aplicação web é possível escrever mensagens e criptografar transformando de forma secreta e segura. A mensagem é protegida por meio de criptografia pode ser lida somente com a chave correta (deslocamento da letra).  
 
 ### Interface do usuário (UI)
 
@@ -65,11 +67,13 @@ A interface permite ao usuário:
 
 ### :bulb: Layout
 
-![](./scr/img/palettes-color.png)
+O azul transmite a ideia de **calma, serenidade e tranquilidade**. Por esse motivo, costuma ser comum o seu uso para representar profissionalismo, estabilidade e segurança.
 
-O prototipo foi criado no mockflow. O primeiro prototipo foi apenas desenhado as caixas de texto e os botãos.
+![paleta-de-cores](./src/img/palettes-color.png)
 
-![](./src/img/prototipo.png)
+O protótipo foi criado no [mockflow](https://mockflow.com/). O primeiro protótipo foi apenas desenhado as caixas de texto e os botões. Após escolher as cores do site foi realizado o layout abaixo e logotipo.
+
+![prototipo](./src/img/prototipo.png)
 
 
 ## :gear: Tecnologias
@@ -83,4 +87,3 @@ Para desenvolvimento do projeto foram utilizados:
 - JavaScript
 
 - Node.js
-  

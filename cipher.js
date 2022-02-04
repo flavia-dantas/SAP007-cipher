@@ -1,3 +1,9 @@
+const tamanhoDoAlfabeto = 26;
+const letraAmaiscula = 65;
+const letraZmaiscula = 90;
+const letraAminuscula = 97;
+const letraZminuscula = 122;
+
 const cipher = {
 
   encode: function (offset, mensagem) {
@@ -7,21 +13,16 @@ const cipher = {
     let resultadoCodificar = "";
     for (let i = 0; i < mensagem.length; i++) {
       let codDaLetraASC = mensagem.charCodeAt(i);
-      if (codDaLetraASC >= 65 && codDaLetraASC <= 90) { // Letras Maiusculas
-        let letraCodificada = ((codDaLetraASC - 65 + offset) % 26) + 65;
+      if (codDaLetraASC >= letraAmaiscula && codDaLetraASC <= letraZmaiscula) { // Letras Maiusculas
+        let letraCodificada = ((codDaLetraASC - letraAmaiscula + offset) % tamanhoDoAlfabeto) + letraAmaiscula;
         resultadoCodificar += String.fromCharCode(letraCodificada);
-      } else if (codDaLetraASC >= 97 && codDaLetraASC <= 122) { // Letras Minusculas
-        let letraCodificada = ((codDaLetraASC - 97 + offset) % 26) + 97;
+      } else if (codDaLetraASC >= letraAminuscula && codDaLetraASC <= letraZminuscula) { // Letras Minusculas
+        let letraCodificada = ((codDaLetraASC - letraAminuscula + offset) % tamanhoDoAlfabeto) + letraAminuscula;
         resultadoCodificar += String.fromCharCode(letraCodificada);
 
-      } else if (codDaLetraASC >= 32 && codDaLetraASC <= 47) { // caractéres
-        resultadoCodificar += String.fromCharCode(codDaLetraASC);
-      } else if (codDaLetraASC >= 58 && codDaLetraASC <= 64) { // caractéres
-        resultadoCodificar += String.fromCharCode(codDaLetraASC);
-      } else if(codDaLetraASC >= 123 && codDaLetraASC <=254){
-        resultadoCodificar += String.fromCharCode(codDaLetraASC);
+      } else {
+        resultadoCodificar += String.fromCharCode(codDaLetraASC); // caractéres especiais
       }
-
     }
     return resultadoCodificar;
 
@@ -34,19 +35,15 @@ const cipher = {
     let resultadoDescodificar = "";
     for (let i = 0; i < mensagem.length; i++) {
       let codDaLetraASC = mensagem.charCodeAt(i);
-      if (codDaLetraASC >= 65 && codDaLetraASC <= 90) { // Letras Maiusculas
-        let letraDescodificada = ((codDaLetraASC - 90 - offset) % 26) + 90;
+      if (codDaLetraASC >= letraAmaiscula && codDaLetraASC <= letraZmaiscula) { // Letras Maiusculas
+        let letraDescodificada = ((codDaLetraASC - letraZmaiscula - offset) % tamanhoDoAlfabeto) + letraZmaiscula;
         resultadoDescodificar += String.fromCharCode(letraDescodificada);
-      } else if (codDaLetraASC >= 97 && codDaLetraASC <= 122) { // Letras Minusculas
-        let letraDescodificada = ((codDaLetraASC - 122 - offset) % 26) + 122;
+      } else if (codDaLetraASC >= letraAminuscula && codDaLetraASC <= letraZminuscula) { // Letras Minusculas
+        let letraDescodificada = ((codDaLetraASC - letraZminuscula - offset) % tamanhoDoAlfabeto) + letraZminuscula;
         resultadoDescodificar += String.fromCharCode(letraDescodificada);
 
-      } else if (codDaLetraASC >= 32 && codDaLetraASC <= 47) { // caractéres
-        resultadoDescodificar += String.fromCharCode(codDaLetraASC);
-      } else if(codDaLetraASC >= 58 && codDaLetraASC <= 64) { // caractéres
-        resultadoDescodificar += String.fromCharCode(codDaLetraASC);
-      } else if(codDaLetraASC >= 123 && codDaLetraASC <=254){
-        resultadoDescodificar += String.fromCharCode(codDaLetraASC);
+      } else {
+        resultadoDescodificar += String.fromCharCode(codDaLetraASC); // caractéres especiais
       }
 
     }
@@ -55,9 +52,3 @@ const cipher = {
 
 }
 export default cipher;
-
-// cipher.encode(offset, string): offset é o número de posições que queremos mover para a
-// direita no alfabeto e string é a mensagem (texto) que queremos cifrar.
-// cipher.decode(offset, string): offset é o número de posições que queremos mover para a
-// esquerda no alfabeto e string é a mensagem (texto) que queremos decifrar.
-// codigoDaletraASC - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra

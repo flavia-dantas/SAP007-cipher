@@ -67,7 +67,7 @@ A interface permite ao usuário:
 
 ### :bulb: Layout
 
-O azul transmite a ideia de **calma, serenidade e tranquilidade**. Por esse motivo, costuma ser comum o seu uso para representar profissionalismo, estabilidade e segurança.
+As cores do definadas foram o azul e branco. O azul transmite a ideia de **calma, serenidade e tranquilidade**. Por esse motivo, costuma ser comum o seu uso para representar profissionalismo, estabilidade e segurança.
 
 ![paleta-de-cores](./src/img/palettes-color.png)
 

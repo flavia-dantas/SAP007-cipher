@@ -44,7 +44,7 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## :computer: Projeto
 
-O [Security Cipher](https://flavia-dantas.github.io/SAP007-cipher/) foi desenvolvido para atender o público que necessita de segurança e privacidade. Através da aplicação web é possível escrever mensagens e criptografar transformando de forma secreta e segura. A mensagem é protegida por meio de criptografia pode ser lida somente com a chave correta (deslocamento da letra).  
+O [Security Cipher](https://flavia-dantas.github.io/SAP007-cipher/) foi desenvolvido para atender o público que necessita de segurança e privacidade. Através da aplicação web é possível escrever mensagens e criptografar transformando de forma secreta e segura. A mensagem é protegida por meio de criptografia pode ser lida somente com a chave correta (deslocamento da letra).
 
 ### Interface do usuário (UI)
 

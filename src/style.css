@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;    
 }
 html {
     scroll-behavior: smooth;
@@ -10,10 +10,12 @@ body{
     background-color:#fffffF;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 14px;
-    
 }
 h3{
     padding: 10px;
+}
+p{
+    line-height: 1em;
 }
 /* cabeçalho */
 .container-header{
@@ -28,11 +30,11 @@ h3{
 }
 .menu{
     text-align: right;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 .menu ul li{
     display: inline;
-    text-align: right;
+    
 }
 .menu ul li a{
     padding: 2px 10px;
@@ -49,20 +51,21 @@ h3{
 .container-inicio{
     display: flex;
     text-align: center;
-    padding: 10px;  
+    padding: 10px;
+    border-radius: 30px;
+    width: 80vw;   
     position: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .imagem-cadeado{
-    width: 200px;
+    width: 100%;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .container-cipher{
     background-color: #8BB7F8;
     display: inline-flex;
@@ -70,10 +73,10 @@ h3{
     justify-content: space-between;
     text-align: justify;
     padding: 20px 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 3vw;
+    margin-right: 2vw;
     border-radius: 20px;
-    width: 800px;
+    width: 60vw;
 }
 .container-significado h3{
     text-align: center;
@@ -86,9 +89,8 @@ h3{
     text-align: justify;
     padding: 15px 15px;
     border-radius: 20px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 15vw;
+    margin-left: 2vw;
 }
 .container-funcionamento{
     background-color: #8BB7F8;
@@ -99,15 +101,15 @@ h3{
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
-    width: 800px;   
+    width: 50vw;   
     position: center;
 }
 /* inicio cipher hmtl */
 .mensagem{
     display: flex;
     margin: auto;
-    width: 300px;
-    height: 140px;
+    height: 25vh;
+    width: 25vw;
     border-radius: 6px;
     border: #2D6AC4 solid 2px;
 }
@@ -142,14 +144,13 @@ h3{
     text-align: center;
     padding: 10px;
     border-radius: 30px;
-    width: 700px;   
+    width: 60vw;   
     position: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .container-codificar, .container-descodificar{
     padding: 8px 8px;
     display: inline-flex;
@@ -157,7 +158,6 @@ h3{
     justify-content: space-between;
     margin-left: 10px;
 }
-
 .btnEncode, .btnDecode{
     padding: 8px 8px;
     border-radius: 10px;
@@ -192,4 +192,67 @@ h3{
     padding:2px;
     height: 35px;
     align-items: center;
+}
+/*RESPONSIVO PARA TABLETS*/
+@media screen and (min-width:481px) and (max-width:960px){
+    .container-principal{
+        width: 100vw;
+        margin-right: 2vw;
+    }
+    .container-inicio{
+        width: 100vw; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem-cadeado{
+        width: 70%;  
+        align-items:center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-cipher, .container-significado{
+        width: 80vw;
+        margin-top: 2vw;  
+    }
+    .container-funcionamento{
+        width: 80vw;
+    }
+    .container-codificar, .container-descodificar{
+        width: 60vw;
+        padding: 2vw;
+    }
+    .mensagem{
+        width: 50vw ;
+        height: 30vh;
+    }
+}
+
+/*RESPONSIVO PARA CELULARES*/
+ @media screen and (max-width: 480px){
+    .container-principal{
+        width: 100vw;
+        margin-right: 2vw ;    
+    }
+    .container-inicio{
+        width: 100vw; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    .container-cipher, .container-significado{
+        width: 80vw;
+        margin-top: 2vw;
+    }
+    .container-funcionamento{
+        width: 80vw;
+    }
+    .container-codificar, .container-descodificar{
+        width: 60vw;
+        padding: 2vw;
+    }
+    .mensagem{
+        width: 50vw ;
+        height: 20vh;
+    }
 }
